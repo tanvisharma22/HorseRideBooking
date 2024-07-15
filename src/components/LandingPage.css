@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #5c4033;
+  }
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color:#803D3B ;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+  }
+  
+  .nav-links a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack links vertically */
+    }
+  
+    .nav-links a {
+      margin: 5px 0; /* Adjust margin for spacing */
+    }
+  }
+  
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  .content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .horse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .horse-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .horse-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .horse-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .horse-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .book-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #AF8260;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+  }
+  
+  .book-now-button:hover {
+    background-color: #704329;
+  }
+  
